@@ -1,10 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Text} from 'react-native';
 
-class Nome extends Component {
-  render() {
-    return <Text>{this.props.nomeDaPessoa}</Text>;
-  }
-}
+const Nome = (props) => {
+  return <Text>{props.nomeDaPessoa}</Text>;
+};
 
 export default Nome;

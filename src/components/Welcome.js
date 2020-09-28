@@ -1,21 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Text} from 'react-native';
 import Nome from './Nome';
 
-class Welcome extends Component {
-  componentDidMount() {
-    console.log('Componente Welcome montado');
-  }
-
-  render() {
-    return (
-      <>
-        <Text>
-          Seja bem vindo, <Nome nomeDaPessoa={this.props.nome} />
-        </Text>
-      </>
-    );
-  }
-}
+//props -> props.nome
+const Welcome = ({nome}) => {
+  return (
+    <>
+      <Text>
+        Seja bem vindo, <Nome nomeDaPessoa={nome} />
+      </Text>
+    </>
+  );
+};
 
 export default Welcome;
